@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-Jan-2015, 15:06:19
+    Author     : ollie
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Play);
+
+html, body {
+    margin:0;
+    padding:0;
+    font-family: "Play", Helvetica, Arial;
+    background-color:#000000;
+    color:#ffffff;
+}
+
+h1 {
+    font-size:80px;
+    text-align:center;
+    margin:0;
+    padding:0;
+    margin-top:100px;
+}
+
+#job {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 80vw;
+    border: solid 5px #ffffff;
+    padding:1vw;
+    text-align:center;
+}
+
+#title {
+    font-size:80px;
+}
+
+#description {
+    font-size:55px;
+    margin-top:40px;
+}
+
+#interuptable {
+    font-size: 100px;
+    margin-top:100px;
+    text-align:center;
+}
+
+#interuptable.yes {
+    color:greenyellow;
+}
+
+#interuptable.no {
+    color:orangered;
+}
+

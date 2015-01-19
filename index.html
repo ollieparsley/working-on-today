@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Working on today</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <h1>What is <span id="shortName"></span> working on today?</h1>
+        <div id="job">
+            <div id="day"></div>
+            <div id="title"></div>
+            <div id="description"></div>
+        </div>
+            
+        <div id="interuptable" class="no"></div>
+        
+        <script type="text/javascript" src="js/work.js"></script>
+        <script type="text/javascript" src="js/work_utils.js"></script>
+        <script type="text/javascript">
+            window.addEventListener("load", function(){
+                
+                //Update every minute
+                setInterval(function(){
+                    window.updateWork();
+                }, 60 * 1000);
+                
+                //Update now!
+                window.updateWork();
+                
+                //Reload window every 15mins
+                setTimeout(function(){
+                    window.location.reload();
+                }, 15 * 60 * 1000)
+                
+            }, false);
+        </script>
+        
+        
+    </body>
+</html>
