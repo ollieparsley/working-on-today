@@ -23,4 +23,4 @@ Self explanatory :)
 
 ## Example
 
-![Image](../blob/master/screenshot.png?raw=true)
+![Image](../master/screenshot.png?raw=true)
